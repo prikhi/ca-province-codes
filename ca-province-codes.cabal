@@ -4,12 +4,12 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: dfe937e3dedef8b11c4cc328fbb21d9be6a9ffc2d5eeb07c7626fbab29b29a64
+-- hash: 3a7304af6fbe6f3118fd32082da81e04bc4a069d7cc719750c2cefd86fcd788f
 
 name:           ca-province-codes
 version:        0.1.0.0
 synopsis:       ISO 3166-2:CA Province Codes and Names
-description:    This package contains a `ProvinceCode` data type containing each Canadian Province and Territory, as well as functions for converting from and to the English subdivision names.
+description:    This package contains a @Code@ data type containing each Canadian Province and Territory, as well as functions for converting from and to the English subdivision names.
 category:       Data
 homepage:       https://github.com/prikhi/ca-province-codes#readme
 bug-reports:    https://github.com/prikhi/ca-province-codes/issues
