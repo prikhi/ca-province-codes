@@ -1,3 +1,6 @@
-# Changelog for ca-province-codes
+# Change Log
 
-## Unreleased changes
+
+## v1.0.0.0
+
+* Initial package release.
