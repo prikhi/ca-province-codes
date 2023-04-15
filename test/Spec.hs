@@ -19,6 +19,12 @@ main = hspec $ do
     describe "fromName" $
         it "is case-insensitive" $ property $
             \c -> (CAProvinces.fromName . T.toUpper . CAProvinces.toName) c == Just c
+    describe "isProvince/isTerritory" $
+        it "each code produces True for only one of the functions" $
+            CAProvinces.all `shouldSatisfy` all (\c ->
+                (CAProvinces.isTerritory c && not (CAProvinces.isProvince c))
+                    || (CAProvinces.isProvince c && not (CAProvinces.isTerritory c))
+                )
     describe "Aeson instance" $
         it "is idempotent" $ property $
             \c -> (decode . encode) c == Just (c :: CAProvinces.Code)
